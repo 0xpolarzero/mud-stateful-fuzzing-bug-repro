@@ -27,7 +27,7 @@ contract Handler is Test {
   }
 
   /// @dev Increment the counter
-  function handler_updateWorld(uint256) public {
+  function handler_incrementCounter(uint256) public {
     world.app__increment();
     _mirrorCounter++;
   }
