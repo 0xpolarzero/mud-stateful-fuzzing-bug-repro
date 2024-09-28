@@ -24,6 +24,7 @@ contract Handler is Test {
   constructor(address _world) {
     world = IWorld(_world);
     StoreSwitch.setStoreAddress(_world);
+    _mirrorCounter = Counter.get();
   }
 
   /// @dev Increment the counter
